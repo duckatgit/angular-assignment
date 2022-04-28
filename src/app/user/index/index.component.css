@@ -1,0 +1,14 @@
+thead {
+    background: #e9ebef;
+}
+tbody {
+    border-top: 1px solid #b1afaf !important;
+}
+td {
+    vertical-align: middle;
+    font-size: 15px;
+}
+a.btn.btn-primary {
+    padding: 5px 15px;
+    font-size: 13px;
+}

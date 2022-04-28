@@ -1,0 +1,28 @@
+<div class="container">
+  <br/>
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+        <td>
+          <a href="#" [routerLink]="['/user/', user.id, 'edit']" class="btn btn-primary">Edit</a>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
